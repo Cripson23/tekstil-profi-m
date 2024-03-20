@@ -1,0 +1,110 @@
+/* Стилизация абзацев */
+p {
+    margin-left: 20px;
+    margin-bottom: 5px; /* Отступ снизу для абзацев */
+    line-height: 1.5; /* Межстрочный интервал */
+    color: #666; /* Цвет текста абзацев */
+}
+
+/* Стилизация списка истории активности */
+.activity-history ul {
+    padding-left: 20px; /* Отступ слева для элементов списка, чтобы выровнять маркеры */
+    margin-top: 0; /* Убрать верхний отступ списка */
+}
+
+.activity-history li {
+    margin-bottom: 5px; /* Отступ снизу для элементов списка */
+}
+
+.edit-profile-button {
+    margin-top: 10px;
+}
+
+.change-password-button {
+    margin-left: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+/* Стили для страницы профиля */
+.user-avatar {
+    /* Задаем ширину и высоту изображения */
+    width: 150px; /* или другой размер, который вам нужен */
+    height: 150px; /* должно совпадать с шириной для создания круга */
+
+    /* Делаем изображение круглым */
+    border-radius: 50%;
+
+    /* Опционально: добавляем рамку вокруг аватара */
+    border: 2px solid #ddd;
+
+    /* Опционально: добавляем небольшой отступ снизу */
+    margin-bottom: 20px;
+
+    /* Выравнивание изображения (если нужно) */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-header {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.profile-header h2 {
+    margin: 10px 0;
+}
+
+.profile-details, .profile-security, .activity-history {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.profile-details h2, .profile-security h2, .activity-history h2 {
+    color: #ffffff;
+    padding: 5px;
+    margin-top: 0;
+}
+
+.activity-history-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgba(248, 248, 248);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.activity-history-card__header {
+    color: #31373f;
+    margin-bottom: 10px;
+}
+
+.activity-history-card__details {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.activity-history-card__details div {
+    margin-bottom: 5px;
+}
+
+.pagination {
+    margin-left: 50px;
+}

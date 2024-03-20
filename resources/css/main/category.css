@@ -1,0 +1,154 @@
+.not-found-products__header {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.category-type__title {
+    margin-left: 80px;
+    text-align: center;
+    font-size: 28px;
+    color: rgb(57, 69, 224);
+    padding: 20px;
+}
+
+.products {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.products-all {
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.product__wrapper {
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.product-img {
+    max-height: 350px;
+    max-width: 600px;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.product-content{
+    margin-left: 130px;
+}
+
+.product-content__subtitle{
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: rgb(91, 138, 226);
+    position: relative;
+}
+
+.product-content__title{
+    margin-bottom: 20px;
+    font-size: 40px;
+    padding-bottom: 10px;
+    max-width: 490px;
+    color: rgb(91, 138, 226);
+}
+
+.product-content__text{
+    margin-top: 20px;
+    max-width: 400px;
+    line-height: 28px;
+}
+
+.product-content__desc{
+    margin-top: 35px;
+    font-size: 12px;
+    color: rgb(122, 118, 118);
+}
+
+.pagination {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.pagination span {
+    color: rgb(57, 69, 224);
+}
+
+.product-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#price-range-slider {
+    margin-top: 20px;
+}
+
+.price-range-slider__wrapper {
+    margin-right: 50px;
+    width: 400px;
+}
+
+.data-manipulation-panel input {
+    display: inline-block; /* Дисплей по умолчанию */
+    border: 1px solid #ccc; /* Граница */
+    border-radius: 4px; /* Закругленные углы */
+    box-sizing: border-box; /* Чтобы паддинги не увеличивали размер элемента */
+    -webkit-transition: 0.5s; /* Плавный переход для Safari */
+    transition: 0.5s; /* Плавный переход */
+    outline: none; /* Убрать стандартный outline при фокусе */
+    padding: 3px;
+    font-size: 16px;
+    width: 150px;
+    color: rgb(57, 69, 224);
+}
+
+/* Стилизация слайдера */
+.ui-slider {
+    margin-top: 10px;
+    height: 12px; /* Увеличение высоты ползунка */
+    background: #e9ecef; /* Фоновый цвет трека */
+    border: 1px solid #ced4da; /* Граница трека */
+}
+
+.ui-slider-handle {
+    width: 20px; /* Ширина ползунка */
+    height: 30px; /* Высота ползунка */
+    border-radius: 50%; /* Делаем ползунки круглыми */
+    background: rgb(57, 69, 224); /* Фоновый цвет ползунка */
+    border: 1px solid rgb(57, 69, 224); /* Граница ползунка */
+    top: -10px; /* Позиционирование ползунка относительно трека */
+}
+
+.ui-slider-range {
+    background: rgb(57, 69, 224); /* Фоновый цвет выбранного диапазона */
+}
+
+.input-filter-name, .input-filter-brand-name {
+    margin-right: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#min-price, #max-price {
+    text-align: center;
+}
+
+.data-manipulation-panel {
+    border: 2px solid rgb(57, 69, 224);
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 25px;
+}
+
+/* Стилизация текста */
+.filter-panel label {
+    font-size: 16px; /* Увеличиваем размер текста */
+    color: rgb(57, 69, 224);
+    font-weight: bold;
+    margin-right: 3px;
+}
+

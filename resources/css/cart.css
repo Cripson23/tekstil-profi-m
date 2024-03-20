@@ -1,0 +1,116 @@
+.floating-cart {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(57, 69, 224);
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.floating-cart i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.floating-cart .cart-total {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Ховер эффект для иконки */
+.floating-cart:hover {
+    background-color: white;
+    color: rgb(57, 69, 224)
+}
+
+.cart-table {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+    max-width: 100%; /* Ограничить ширину таблицы шириной её контейнера */
+    table-layout: fixed;
+}
+
+.cart-table tr td:last-child, .cart-table tr th:last-child {
+    width: 50px; /* Фиксированная ширина для последнего столбца */
+    min-width: 50px; /* Указываем min-width, если нужно */
+    padding-right: 40px;
+}
+
+.quantity-btn {
+    background-color: rgb(57, 69, 224);
+    color: white;
+    border: 2px solid rgb(57, 69, 224);
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1;
+}
+
+.quantity-btn:hover {
+    background-color: white;
+    color: rgb(57, 69, 224);
+}
+
+.quantity-input {
+    margin: 0 15px;
+    font-size: 16px;
+    height: 30px;
+    width: 60px;
+    text-align: center;
+    border: 1px solid #ccc; /* Добавляем тонкую границу */
+    border-radius: 5px; /* Скругляем углы */
+    padding: 5px; /* Добавляем небольшой отступ внутри */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Добавляем немного тени внутри */
+    -webkit-appearance: none; /* Убираем стандартный стиль в WebKit-браузерах */
+    -moz-appearance: textfield; /* Убираем стрелки в Firefox */
+}
+
+/* Стили для кнопок увеличения и уменьшения значения в Chrome, Safari, Edge */
+.quantity-input::-webkit-inner-spin-button,
+.quantity-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Улучшаем видимость при фокусировке на элементе */
+.quantity-input:focus {
+    border-color: #66afe9;
+    outline: none; /* Убираем стандартный outline */
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6); /* Добавляем синюю тень при фокусировке */
+}
+
+.cart-table th, .cart-table td {
+    min-width: 150px;
+    text-align: center; /* Центрирование текста */
+    padding: 15px; /* Отступы внутри ячеек для лучшего визуального восприятия */
+    border-bottom: 1px solid #ddd; /* Граница снизу для разделения строк */
+    vertical-align: middle;
+    overflow-wrap: break-word; /* Позволить содержимому переноситься на новую строку */
+}
+
+.cart-table tr:last-child td {
+    border-bottom: none;
+}
+
+.fa-trash {
+    color: rgb(57, 69, 224);
+    font-size: 20px;
+}
+
+.fa-trash:hover {
+    cursor: pointer;
+}
+
+.checkout-btn {
+    font-size: 18px;
+}

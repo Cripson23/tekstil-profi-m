@@ -1,0 +1,230 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background: rgb(248, 248, 248);
+    font-family: 'Asap Condensed', sans-serif;
+    overflow-x: hidden;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    flex: 1; /* Элемент растягивается, чтобы занимать все доступное пространство */
+}
+
+.container{
+    max-width: 1366px;
+    width: 100%;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    padding: 22px 30px;
+    border-radius: 5px;
+    display: none;
+    z-index: 9000;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.logout-button {
+    margin-left: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background: white;
+}
+
+.btn-primary {
+    background-color: rgb(57, 69, 224);
+    border: 2px solid rgb(57, 69, 224);
+}
+
+.btn-primary:hover {
+    color: rgb(57, 69, 224);
+}
+
+.btn-danger {
+    background-color: tomato;
+    border: 2px solid tomato;
+}
+
+.btn-danger:hover {
+    color: tomato;
+}
+
+.btn-secondary {
+    background-color: #31373f;
+    border: 2px solid #31373f;
+}
+
+.btn-secondary:hover {
+    color: #31373f;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+/* Общие стили для select */
+select {
+    padding: 5px 5px; /* Отступы внутри элемента */
+    font-size: 16px; /* Размер шрифта */
+    border: 1px solid #ccc; /* Граница */
+    border-radius: 4px; /* Скругление углов */
+    background-color: #fff; /* Цвет фона */
+    color: #333; /* Цвет текста */
+    outline: none; /* Удаление контура фокуса */
+    cursor: pointer; /* Замена курсора на указатель */
+}
+
+/* Стили при наведении */
+select:hover {
+    border-color: #999; /* Изменение цвета границы при наведении */
+}
+
+/* Стили при фокусе */
+select:focus {
+    border-color: rgb(57, 69, 224); /* Изменение цвета границы при фокусе */
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5); /* Добавление тени при фокусе */
+}
+
+/* Стили для опций */
+select option {
+    padding: 8px; /* Отступы внутри опций */
+}
+
+/* Стили для опций при наведении */
+select option:hover {
+    background-color: #f0f0f0; /* Изменение цвета фона при наведении */
+}
+
+/* Filter, pagination */
+.data-manipulation-panel {
+    display: flex;
+    align-items: baseline; /* Центрирование элементов по вертикали */
+    justify-content: space-between; /* Распределение свободного пространства */
+    flex-wrap: wrap; /* Позволяет элементам переноситься, если не хватает места */
+}
+
+.select-area select, .select-area input {
+    color: white;
+    border: 2px solid rgb(57, 69, 224);
+    background-color: rgb(57, 69, 224);
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.select-area select:focus, .select-area input:focus {
+    color: rgb(57, 69, 224);
+    background-color: white;
+}
+
+.pagination {
+    text-align: center;
+    font-size: 18px;
+}
+
+.pagination span {
+    font-size: 24px;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.page {
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: rgb(57, 69, 224);
+    color: white;
+    border: 2px solid rgb(57, 69, 224);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.page:hover {
+    color: rgb(57, 69, 224);
+    background-color: white;
+}
+
+.page.active {
+    color: rgb(57, 69, 224);
+    background-color: white;
+}
+
+/* Product */
+.product-content__price {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 26px;
+}
+
+.current-price-with-old {
+    font-weight: normal; /* Делаем шрифт текущей цены более жирным */
+    color: rgb(55, 166, 3); /* Зеленый цвет для акцентирования текущей цены */
+}
+
+.current-price {
+    font-weight: normal; /* Делаем шрифт текущей цены более жирным */
+    color: rgb(57, 69, 224); /* Зеленый цвет для акцентирования текущей цены */
+}
+
+.old-price {
+    text-decoration: line-through; /* Зачеркивание для старой цены */
+    color: #999; /* Серый цвет для старой цены, чтобы показать, что она больше не актуальна */
+    margin-left: 10px; /* Добавляем немного пространства между текущей и старой ценами */
+    font-size: 16px; /* Меньший размер шрифта для старой цены */
+}
+
+.button-product {
+    margin-top: 35px;
+    padding: 15px 30px;
+    background: none;
+    border-radius: 20px;
+    border: 2px solid rgb(91, 138, 226);
+    color: rgb(91, 138, 226);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.button-product:hover {
+    color: white;
+    background: rgb(91, 138, 226);
+}

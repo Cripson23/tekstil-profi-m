@@ -1,0 +1,194 @@
+.data-manipulation-panel {
+    padding: 5px;
+}
+
+.data-manipulation-panel input {
+    display: inline-block; /* Дисплей по умолчанию */
+    border: 1px solid #ccc; /* Граница */
+    border-radius: 4px; /* Закругленные углы */
+    box-sizing: border-box; /* Чтобы паддинги не увеличивали размер элемента */
+    -webkit-transition: 0.5s; /* Плавный переход для Safari */
+    transition: 0.5s; /* Плавный переход */
+    outline: none; /* Убрать стандартный outline при фокусе */
+    padding: 5px 10px;
+    font-size: 16px;
+    width: 150px;
+    color: rgb(57, 69, 224);
+}
+
+.data-manipulation-panel label {
+    color: white;
+}
+
+.filter-panel {
+    display: flex;
+    flex: auto;
+}
+
+#input-filter-id {
+    max-width: 100px;
+    margin-right: 50px;
+}
+
+.input-filter-status {
+    margin-right: 30px;
+}
+
+#input-filter-id::-webkit-outer-spin-button,
+#input-filter-id::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.orders {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.select-area {
+    display: flex;
+    align-items: baseline;
+}
+
+.section-header {
+    color: white;
+}
+
+.pagination span {
+    color: rgb(57, 69, 224)!important;
+}
+
+.pagination {
+    margin: 30px;
+}
+
+.not-found-orders__header {
+    text-align: center;
+}
+
+/* Стили для таблицы заказов */
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px; /* Увеличение шрифта для лучшей читаемости */
+}
+
+.orders-table th, .orders-table td {
+    text-align: left;
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd; /* Легкая горизонтальная линия между строками */
+}
+
+.orders-table th {
+    background-color: rgb(57, 69, 224); /* Зеленый цвет заголовков */
+    color: white; /* Белый текст для заголовков */
+}
+
+.orders-table th:not(:last-child) {
+    cursor: pointer; /* Устанавливает курсор в виде указателя для всех заголовков, кроме последнего */
+}
+
+.orders-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Чередование цветов строк для улучшения читаемости */
+}
+
+.orders-table tr:hover {
+    background-color: #ddd; /* Светло-серый фон при наведении для лучшей визуализации активной строки */
+    cursor: pointer;
+}
+
+.orders-table td:first-child, .orders-table th:first-child {
+    border-radius: 4px 0 0 4px; /* Закругление левых углов для первой ячейки */
+}
+
+.orders-table td:last-child, .orders-table th:last-child {
+    border-radius: 0 4px 4px 0; /* Закругление правых углов для последней ячейки */
+}
+
+section {
+    margin-top: 30px;
+}
+
+p {
+    margin-left: 20px;
+    margin-bottom: 5px; /* Отступ снизу для абзацев */
+    line-height: 1.5; /* Межстрочный интервал */
+    color: #666; /* Цвет текста абзацев */
+}
+
+.order-user-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-details {
+    flex: 1; /* Это позволит обеим секциям занимать равное пространство */
+    margin-right: 20px; /* Добавляет пространство между секциями */
+}
+
+.user-details {
+    flex: 1.4
+}
+
+.order-details:last-child, .user-details:last-child {
+    margin-right: 0; /* Убирает маржин у последнего элемента, если он есть */
+}
+
+.modal-body {
+    margin-top: 0;
+}
+
+.products-details table {
+    width: 100%; /* Таблица занимает всю доступную ширину */
+    margin-top: 20px; /* Добавляем отступ сверху для воздуха */
+    border-collapse: collapse; /* Убираем двойные границы между ячейками */
+    table-layout: auto; /* Автоматическая ширина столбцов */
+}
+
+.products-details th, .products-details td {
+    text-align: left; /* Выравнивание текста влево для всех ячеек */
+    padding: 8px; /* Паддинг внутри ячеек */
+    border: 1px solid #ddd; /* Граница ячеек */
+    font-size: 14px; /* Размер шрифта */
+}
+
+.products-details th {
+    background-color: #f2f2f2; /* Цвет фона для заголовков */
+    color: #333; /* Цвет текста заголовков */
+}
+
+.products-details tr:hover {
+    background-color: #f5f5f5; /* Цвет фона для строк при наведении */
+}
+
+/* Стили для изображений в таблице */
+.products-details img {
+    width: 100px; /* Ширина изображения */
+    height: auto; /* Высота автоматически по пропорции */
+    border-radius: 4px; /* Скругление углов изображения */
+    margin-right: 10px; /* Отступ справа от изображения */
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .modal-dialog {
+        width: 95%; /* Ширина модального окна на мобильных */
+    }
+    .products-details th, .products-details td {
+        font-size: 12px; /* Уменьшаем размер шрифта для мобильных */
+    }
+}
+
+.products-details table th, .products-details table td {
+    min-width: 150px;
+    text-align: center; /* Центрирование текста */
+    padding: 15px; /* Отступы внутри ячеек для лучшего визуального восприятия */
+    border-bottom: 1px solid #ddd; /* Граница снизу для разделения строк */
+    vertical-align: middle;
+    overflow-wrap: break-word; /* Позволить содержимому переноситься на новую строку */
+}

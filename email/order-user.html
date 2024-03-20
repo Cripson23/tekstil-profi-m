@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новый заказ</title>
+    <style>
+		    table {
+			    width: 100%;
+			    border-collapse: collapse;
+		    }
+		    th, td {
+			    padding: 8px;
+			    text-align: center;
+			    border-bottom: 1px solid #ddd;
+		    }
+		    th {
+			    background-color: rgb(91, 138, 226);
+			    color: white;
+		    }
+		    h3 {
+			    color: rgb(57, 69, 224);
+		    }
+    </style>
+</head>
+
+<body>
+    <h3>Ваш заказ №{order_id} на сайте {site_name} успешно оформлен и принят в работу. Ваши данные:</h3>
+    <p><strong>ФИО:</strong> &nbsp;{user_name}</p>
+    <p><strong>E-mail:</strong> &nbsp;{user_email}</p>
+    <p><strong>Адрес доставки:</strong> &nbsp;{user_delivery_address}</p>
+    <p><strong>Номер телефона:</strong> &nbsp;{user_phone}</p>
+
+    <br>
+    <h3>Товары в заказе:</h3>
+    <table>
+        <thead>
+        <tr>
+            <th>Название</th>
+            <th>Стоимость</th>
+            <th>Скидка</th>
+            <th>Количество</th>
+            <th>Сумма</th>
+            <th>Сумма скидки</th>
+        </tr>
+        </thead>
+        <tbody>
+            {products}
+        </tbody>
+    </table>
+</body>
+</html>

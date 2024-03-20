@@ -1,0 +1,87 @@
+/* Общие стили личного кабинета */
+
+header {
+    background-color: rgb(91, 138, 226);
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.header__logo{
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.header__link{
+    background: rgb(57, 69, 224);
+    padding: 10px 10px;
+    border-radius: 30px;
+}
+
+.container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer {
+    background-color: rgb(91, 138, 226);
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.container nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Медиа-запросы для адаптивного дизайна */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+}
+
+.orders-button, .profile-button {
+    margin-left: 30px;
+}
+
+.section-header {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(91, 138, 226);
+    padding: 5px;
+    margin-top: 0;
+    border-radius: 4px 4px 0 0;
+}
+
+.section-body {
+    margin-bottom: 10px;
+}
